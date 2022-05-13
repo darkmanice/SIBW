@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/eventoComentario.css">
+  <script src="../js/aniadeComentario.js" type="text/javascript"></script>
+  <script src="../js/muestraComentarios.js" type="text/javascript"></script>
+	<script src="../js/script.js" type="text/javascript"></script>
+</head>
+<body>
+
+<!-- Cabecera -->
+<header>
+			<div><img id="logo" src="../images/logo.png" alt="Logo">
+				<span id="title">Music = Life</span>
+			</div>
+			
+			<!-- Menú dentro de la cabecera-->
+			<div id="menu">
+				<span><a href="../portada.html">Home</a></span>
+				<span><a href="contact.html">Contact</a></span>
+				<span><a href="about.html">About</a></span>
+			</div>
+</header>
+
+<div>
+	<!-- Columna auxiliar con enlaces de interes -->
+  <nav id="auxiliar">
+    <ul>
+      <li><a href="https://www.songkick.com/metro_areas/28755-spain-madrid" target="_blank">SongKick</a></li>
+      <li><a href="https://www.ticketmaster.es/city/madrid/162194?language=en-us" target="_blank">TicketMaster</a></li>
+      <li><a href="https://www.esmadrid.com/en/whats-on-music-madrid" target="_blank">EsMadrid</a></li>
+    </ul>
+  </nav>
+  
+ 	<div id="images">
+		<figure><img id="imagen_evento" src="../images/concierto.jpg"/><figcaption>Celebración del evento</figcaption></figure>
+		<figure><img id="imagen_evento" src="../images/concierto2.jpg"/><figcaption>Luces de discoteca</figcaption></figure>
+	</div>
+  
+  <!-- Descripcion del evento -->
+  <div id="main">
+		<h1>One for my baby</h1>
+		<h2>Boogaclub</h2>
+		<h3>Viernes 1 de Marzo a las 21:00</h3>
+		<p>One for My Baby (y One More for the Road) es una canción inmortalizada por <a href="http://www.sinatra.com/">Frank Sinatra</a>, una pieza de "melancólica belleza metropolitana", como dijo la crítica, que viene al dedo para denominar la experiencia sonora de un crooner, el belga Dirk Van Halewyck, residente físicamente en Salobreña pero espiritualmente en Las Vegas, en cualquier suite del Flamigo, por ejemplo.</p>
+		<p>Entre los músicos que han colaborado con el proyecto ocasionalmente se encuentran Miguel Ángel Pimentel, Julio Pérez, Alberto Martin, Rogelio Gil, Armiño...</p>
+		
+		<p>El repertorio de la banda incluye jazz standards, pasando por el latin y el pop, poul y funk, también dependiendo de la sala, la preferencia del organizador o del público.</p>
+	</div>
+</div>
+
+
+	<!-- Botón para comentarios -->
+	<div id="boton-comentario">
+		<button type="button" onclick="toggleComments()">Comentarios</button>
+   	</div>
+  </div> 
+   	<!-- Div para los comentarios (oculto) -->
+   	<div id="comment-bar">
+   		<h3>COMENTARIOS</h3>
+   		<section class="comment-section">
+   			<div class="comment">
+   				<h5><b>Pepito</b></h5>
+	           <span class="comment-subheading">Comenta: <strong>2/5/2019 04:20:45</strong></span>
+	           <p class="comment-text">
+	             El mejor evento de mi vida.
+	           </p>
+	        </div>
+	        <div class="comment">
+   				<h5><b>Jose</b></h5>
+	            <span class="comment-subheading">Comenta: <strong>31/1/2019 10:32:27</strong></span>
+	            <p class="comment-text">
+	                Un comentario para decir lo bien que me lo he pasado.
+	            </p>
+	        </div>
+   		</section>
+   		
+   		<form action="#" id="add-comment" method="get" onsubmit="return addComment(event)">
+   			<h4>Deje aquí su comentario</h4>
+			<input type="text" name="name" id="name" placeholder="Nombre...">
+			<input type="text" name="email" id="email" placeholder="Correo electrónico...">
+			<textarea name="message" id="message" placeholder="Comentario..." onkeyup="addStringtoForbidden(event)"></textarea>
+			<button type="submit" value="Submit">Enviar</button>
+   		</form>
+   	</div>
+
+<!-- Botones sociales, copyright y contacto -->
+<footer>
+	<span><a href="https://www.facebook.com"><img id="social" src="../images/facebook.png" alt="FB" target="_blank"></a></span>
+	<span><a href="https://www.twitter.com"><img id="social" src="../images/twitter.png" alt="TW" target="_blank"></a></span>
+	<span><a href="https://www.instagram.com"><img id="social" src="../images/instagram.png" alt="IG" target="_blank"></a></span>
+	<span><a href="evento_imprimir.html"><img id="social" src="../images/print.png" alt="PR" target="_blank"></a></span>
+	
+	
+  <p>Site Design / Logo © 2019 Javier Lorenzo García y Carlijn Rolinde Viviane Bönnen Inc; user contributions licensed under cc with attribution required. Contact <a href = "mailto: javierlg2598@correo.ugr.es">Javier</a> or <a href = "mailto: carlijnbonnen@correo.ugr.es">Carlijn</a>.</p>
+</footer>
+
+</body>
+</html>

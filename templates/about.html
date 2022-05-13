@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+	{% block head %}
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/about.css">
+	</head>
+	{% endblock %}
+	
+	{% block logo %}
+		<img id="logo" src="../images/logo.png" alt="Logo">
+	{% endblock %}
+
+  {% block contenido %}
+  <!-- Descripcion del evento -->
+  <div id="main">
+		<h1>{{ titulo }}</h1>
+		<p>{{ parrafo1 }}</p>
+		<p>{{ parrafo2 }}</p>		
+	</div>
+	{% endblock %}

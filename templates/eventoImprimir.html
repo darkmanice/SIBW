@@ -1,0 +1,35 @@
+{% extends "base.html" %}
+	{% block head %}
+	<head>
+		<link rel="stylesheet" type="text/css" href="../css/evento_imprimir.css">
+	</head>
+	{% endblock %}
+	
+	{% block logo %}
+		<img id="logo" src="../images/logo.png" alt="Logo">
+	{% endblock %}
+	
+	{% block contenido %}
+
+	<!-- Imagenes del evento -->
+		<div id="images">
+		<figure><img class="imagen_evento" src="{{ info[7] }}"/><figcaption>{{ info[9] }}</figcaption></figure>
+		<figure><img class="imagen_evento" src="{{ info[8] }}"/><figcaption>{{ info[10] }}</figcaption></figure>
+	</div>
+  
+	<!-- Descripcion del evento -->
+ 		<div id="main">
+			<h1>{{ info[0] }}</h1>
+			<h2>{{ info[1] }}</h2>
+			<h3>{{ info[2] }}</h3>
+			<p>{{ info[3] }}</p>
+			<p>{{ info[4] }}</p>
+			<p>{{ info[5] }}</p>
+	</div>
+	{% endblock %}
+	
+	{% block footer %}
+	<footer>
+		<p>Site Design / Logo © 2019 Javier Lorenzo García y Carlijn Rolinde Viviane Bönnen Inc; user contributions licensed under cc with attribution required. Contact <a href = "mailto: javierlg2598@correo.ugr.es">Javier</a> or <a href = "mailto: carlijnbonnen@correo.ugr.es">Carlijn</a>.</p>
+	</footer>
+	{% endblock %}

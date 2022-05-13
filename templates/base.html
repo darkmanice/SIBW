@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es" xml:lang="es">
+	{% block head %}
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="./css/portada.css">
+	</head>
+	{% endblock %}
+	
+	<body>
+		<header>
+			<div>
+			{% block logo %}
+				<img id="logo" src="./images/logo.png" alt="Logo">
+			{% endblock %}
+				<span id="title">Eventos Musicales</span>
+			</div>
+			
+			<!-- Menú dentro de la cabecera-->
+			<div id="menu">
+				<span><a href="../index.php">Home</a></span>
+				<span><a href="../php/contact.php">Contact</a></span>
+				<span><a href="../php/about.php">About</a></span>
+			</div>
+		</header>
+
+		{% block auxiliar %}
+		<nav id="auxiliar">
+    	<ul>
+      	<li><a href="https://www.songkick.com/metro_areas/28755-spain-madrid" target="_blank">SongKick</a></li>
+      	<li><a href="https://www.ticketmaster.es/city/madrid/162194?language=en-us" target="_blank">TicketMaster</a></li>
+      	<li><a href="https://www.esmadrid.com/en/whats-on-music-madrid" target="_blank">EsMadrid</a></li>
+    	</ul>
+    </nav>
+    {% endblock %}
+	
+		{% block contenido %}
+			<section id="main">
+  	    	{% for evento in eventos %}
+  	    	<div class="item">
+ 						<a href="php/evento.php?id={{evento[6]}}"><img class="event" src="{{evento[7]}}" alt="Imagen {{evento[0]}}"><p>
+ 						{{evento[0]}}</p></a>
+ 					</div>
+    			{% endfor %}
+			</section>
+		{% endblock %}
+		
+		{% block comentarios %}
+		
+		{% endblock %}
+	
+		{% block footer %}
+		<footer>
+			<p>Site Design / Logo © 2019 Javier Lorenzo García y Carlijn Rolinde Viviane Bönnen Inc; user contributions licensed under cc with attribution required. Contact <a href = "mailto: javierlg2598@correo.ugr.es">Javier</a> or <a href = "mailto: carlijnbonnen@correo.ugr.es">Carlijn</a>.</p>
+		</footer>
+		{% endblock %}
+	</body>
+</html>

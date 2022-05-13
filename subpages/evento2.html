@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="../css/evento2.css">
+	<script src="../js/aniadeComentario.js" type="text/javascript"></script>
+  <script src="../js/muestraComentarios.js" type="text/javascript"></script>
+</head>
+<body>
+
+<!-- Cabecera -->
+<header>
+			<div><img id="logo" src="../images/logo.png" alt="Logo">
+				<span id="title">Music = Life</span>
+			</div>
+			
+			<!-- Menú dentro de la cabecera-->
+			<div id="menu">
+				<span><a href="../portada.html">Home</a></span>
+				<span><a href="contact.html">Contact</a></span>
+				<span><a href="about.html">About</a></span>
+			</div>
+</header>
+
+
+<div>
+	<!-- Columna auxiliar con enlaces de interes -->
+  <nav id="auxiliar">
+    <ul>
+      <li><a href="https://www.songkick.com/metro_areas/28755-spain-madrid" target="_blank">SongKick</a></li>
+      <li><a href="https://www.ticketmaster.es/city/madrid/162194?language=en-us" target="_blank">TicketMaster</a></li>
+      <li><a href="https://www.esmadrid.com/en/whats-on-music-madrid" target="_blank">EsMadrid</a></li>
+    </ul>
+  </nav>
+  
+ 	<div id="images">
+		<figure><img id="imagen_evento" src="../images/main_arenal.jpg"/><figcaption>Imagen del evento</figcaption></figure>
+		<figure><img id="imagen_evento" src="../images/arenal_stage.jpg"/><figcaption>Foto desde el escenario</figcaption></figure>
+	</div>
+  
+  <!-- Descripcion del evento -->
+  <div id="main">
+		<h1>Arenal Sound</h1>
+		<h2>Arenal & Malvarrosa</h2>
+		<h3>17 de Julio a las 16:00</h3>
+		<p>Fatboy Slim, Soleá Morente, Belako y Mueveloreina (para los fibers) y Morat, Ummet Ozcan, Dorian y Bad Gyal (para los sounders) perfilan la carta de presentación de dos de las citas ineludibles del verano.</p>
+		<p>La avanzadilla más reciente llega del Arenal Sound, que ha lanzado este jueves el tercer avance de cartel para su décima incursión, del 30 de julio al 4 de agosto en la playa de Burriana, en el litoral castellonense. Una remesa que enriquece la apuesta que integra ya a Martin Garrix, Thirty Seconds To Mars, Karol G, Don Diablo, Oliver Heldens, Vetusta Morla y C. Tangana, entre muchos otros.</p>
+		<p>Se incorporan también los brasileños Cat Dealers, que no dejan de escalar posiciones en el ranking de la escena electrónica. Sin dejar de lado la música urbana, el décimo aniversario también contará con la presencia de Zetazen, Fusa Nocta y el reggae de Adala & The Same Song Band. Los murcianos Second llegarán a Burriana para presentar las canciones de su último disco; y Lucas Loren repite en el festival, aunque esta vez lo hará en solitario. Para estrenos, los de Ms Nina y Ladilla Rusa, que pisarán por primera vez territorio Arenal.</p>
+	</div>
+	
+	<button type="button" onclick="muestraComentarios()">Comentarios</button>
+	
+	<div id="comentarios">
+	<section id="contenido-comentarios">
+		<div class="comment-metadata">
+			Paco
+			<time> 11 diciembre, 2018 a las 2:48 pm</time>
+		</div>	
+	
+  	<div class="comment-content">
+			<p>Comentario 1</p>
+		</div>
+		
+		
+		<div class="comment-metadata">
+			Pepe
+			<time> 19 marzo, 2018 a las 4:12 pm</time>
+		</div>	
+		
+  	<div class="comment-content">
+			<p>Comentario 2</p>
+		</div>	
+		
+		
+		</section>
+		  
+ 		<form action="#" method="get" onsubmit="aniadeComentario()">
+			Name: <input type='text' name='Nombre' id='Nombre'/><br/>
+			Email: <input type='text' name='Email' id='Email'/><br/> 
+			Comment: <input type='text' name='Enviar' id='Comentario'><br/>
+			
+			<button id="botonEnviar"><b>Enviar</b></button>
+		</form>
+	</div>
+</div>
+
+
+
+
+<!-- Botones sociales, copyright y contacto -->
+<footer>
+	<span><a href="https://www.facebook.com"><img id="social" src="../images/facebook.png" alt="FB" target="_blank"></a></span>
+	<span><a href="https://www.twitter.com"><img id="social" src="../images/twitter.png" alt="TW" target="_blank"></a></span>
+	<span><a href="https://www.instagram.com"><img id="social" src="../images/instagram.png" alt="IG" target="_blank"></a></span>
+	<span><a href="evento2_imprimir.html"><img id="social" src="../images/print.png" alt="PR" target="_blank"></a></span>
+	
+	
+  <p>Site Design / Logo © 2019 Javier Lorenzo García y Carlijn Rolinde Viviane Bönnen Inc; user contributions licensed under cc with attribution required. Contact <a href = "mailto: javierlg2598@correo.ugr.es">Javier</a> or <a href = "mailto: carlijnbonnen@correo.ugr.es">Carlijn</a>.</p>
+</footer>
+
+</body>
+</html>

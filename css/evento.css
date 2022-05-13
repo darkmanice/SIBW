@@ -1,0 +1,94 @@
+header {
+	background-image: linear-gradient(#ffe6ff,#ffb3ff);
+	font-size: 20px;
+}
+
+body {
+  background-color: white;
+}
+
+#title{
+  color: black;
+  font-size:50px;
+	display: inline-block;
+	vertical-align: 150%;
+	padding-left: 10%;
+}
+
+#logo{
+  position: left;
+  padding-left: 5%;
+}
+
+#menu{
+	position: relative;
+	text-align: center;
+}
+
+#auxiliar{
+  float: left;
+  width: 10%;
+  padding: 20px;
+}
+
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+#main {
+  padding-left: 20%;
+  width: 70%;
+}
+ 
+h1{
+	padding-left: 2%;
+}
+
+h2{
+	padding-left: 4%;
+	font-size: 16px;
+}
+
+h3{
+	padding-left: 4%;
+	font-size: 16px;
+}
+
+#images{
+  float: right;
+  padding: 2%;
+  z-index: -1;
+}
+
+.imagen_evento{
+	width: 30%;
+	height: 30%;
+}
+
+footer{
+  padding: 10%;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;	
+}
+
+#social{
+	padding-top: 5%;
+	width: 5%;
+	height: 5%;
+}
+
+.boton-centrado{
+	text-align: center;
+}
+
+#botonComentario{
+	top: 50%;
+	position: absolute;
+}
+
+#comentarios{
+	background-color: #DFE5FF;
+	display: none;
+	padding-left: 17%;
+}
